@@ -2,4 +2,25 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  align-content: center;
+}
+img {
+  border-image: 2px red solid;
+}
+button {
+  width: 150px;
+  height: 90px;
+  margin-bottom: 50px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+.box {
+  border: 2px solid black;
+  height: 50%;
+  width: 65%;
+  margin-left: 100px;
+  text-align: center;
+}
+p {
+  border-bottom: 2px solid black;
 }

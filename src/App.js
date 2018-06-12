@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-
 import './App.css';
 
 class App extends Component {
@@ -17,13 +16,23 @@ class App extends Component {
     console.log(myJson);
     this.setState({
       user: myJson,
-      active: true
+      active: !this.state.active
     })
   });
   }
   render() {
     return (
+      <div>
       <button onClick={this.handleClick}>Click me</button>
+        {this.state.active &&
+        <div class="box">
+        <p>{this.state.user.name}</p> 
+        <img src={this.state.user.avatar_url}/>
+        <p>{this.state.user.company}</p>
+        <p>{this.state.user.public_repos}</p>
+        </div>
+      }
+      </div>
     );
   }
 }
